@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Movement on Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Real-Time Vehicle Tracking</h1>
+    <div id="map"></div>
+
+    <div id="controls">
+        <h3>Move Vehicle Manually</h3>
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" placeholder="Enter Latitude">
+        
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" placeholder="Enter Longitude">
+        
+        <button id="moveVehicleBtn">Move Vehicle</button>
+        <button id="resetRouteBtn">Reset Route</button>
+    </div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet-routing-machine/dist/leaflet-routing-machine.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

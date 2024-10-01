@@ -1,0 +1,130 @@
+/* Basic reset for consistent styling across browsers */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Main heading styling */
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Map container */
+#map {
+    height: 500px;
+    width: 100%;
+    border: 2px solid #2c3e50;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Controls container for input fields */
+#controls {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Controls heading */
+#controls h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #2980b9;
+}
+
+/* Labels for inputs */
+#controls label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #34495e;
+    margin: 10px 0 5px;
+}
+
+/* Inputs for latitude and longitude */
+#controls input {
+    width: 250px;
+    padding: 10px;
+    border: 2px solid #2980b9;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+#controls input:focus {
+    border-color: #1abc9c;
+    outline: none;
+}
+
+/* Button styling */
+#controls button {
+    width: 250px;
+    padding: 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#controls button:hover {
+    background-color: #2980b9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#controls button:active {
+    background-color: #1abc9c;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* General link styling (optional if you have links) */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+/* Style for the Reset Route button */
+#controls button:last-of-type {
+    background-color: #e74c3c;
+    color: white;
+    font-weight: bold;
+    padding: 12px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#controls button:last-of-type:hover {
+    background-color: #c0392b;
+}
+
+#controls button:last-of-type:active {
+    background-color: #d35400;
+}
